@@ -1,0 +1,12 @@
+{
+  "venv/lib/python3.6/site-packages/flake8/tests/test_engine.py": true, 
+  "venv/lib/python3.6/site-packages/flake8/tests/test_hooks.py": true, 
+  "venv/lib/python3.6/site-packages/flake8/tests/test_integration.py": true, 
+  "venv/lib/python3.6/site-packages/flake8/tests/test_main.py::TestMain::test_issue_39_regression": true, 
+  "venv/lib/python3.6/site-packages/flake8/tests/test_reporter.py": true, 
+  "venv/lib/python3.6/site-packages/pyflakes/test/test_api.py::CheckTests::test_permissionDenied": true, 
+  "venv/lib/python3.6/site-packages/pyflakes/test/test_api.py::IntegrationTests::test_errors": true, 
+  "venv/lib/python3.6/site-packages/pyflakes/test/test_api.py::IntegrationTests::test_fileWithFlakes": true, 
+  "venv/lib/python3.6/site-packages/pyflakes/test/test_api.py::IntegrationTests::test_goodFile": true, 
+  "venv/lib/python3.6/site-packages/pyflakes/test/test_api.py::IntegrationTests::test_readFromStdin": true
+}
