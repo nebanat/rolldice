@@ -10,5 +10,6 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . .
+RUN pip install --editable .
 
 CMD gunicorn -b 0.0.0.0:5000 --access-logfile - "rolldice.app:create_app()"

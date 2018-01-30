@@ -1,6 +1,14 @@
 version: '2'
 
 services:
+  redis:
+    image: 'redis:3.0-alpine'
+    command: redis-server --requirepass devpassword
+    volumes:
+      - 'redis:/var/lib/redis/data'
+    ports:
+        -  '6379:6379'
+
   rollweb:
     build: .
     command: >
@@ -14,3 +22,14 @@ services:
       - '.:/rolldice'
     ports:
       - '5000:5000'
+
+  celery:
+    build: .
+    command: celery worker -l info -A rolldice.blueprints.contact.tasks
+    env_file:
+      - '.env'
+    volumes:
+      - '.:/rolldice'
+
+volumes:
+  redis:
